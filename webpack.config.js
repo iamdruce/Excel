@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
   console.log('isDev', isDev)
 
   const filename = (ext) =>
-      isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`
+    isProd ? `[name].[contenthash].bundle.${ext}` : `[name].bundle.${ext}`
   const plugins = () => {
     const base = [
       new HtmlWebpackPlugin({
